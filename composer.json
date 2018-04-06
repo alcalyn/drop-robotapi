@@ -1,4 +1,8 @@
 {
+    "name": "alcalyn/drop-robotapi",
+    "bin": [
+        "bin/*"
+    ],
     "require": {
         "calcinai/phpi": "^0.3.0",
         "vlucas/phpdotenv": "^2.4"

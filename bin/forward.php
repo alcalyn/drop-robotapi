@@ -1,6 +1,7 @@
+#!/usr/bin/php
 <?php
 
-require_once __DIR__.'/config.php';
+require_once __DIR__.'/../src/config.php';
 
 echo 'Lets go forward...', PHP_EOL;
 
