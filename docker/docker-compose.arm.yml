@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+    php-fpm:
+        build: docker/php-fpm-rpi
+        volumes:
+            - /sys:/sys
+        devices:
+            - /dev/mem
+            - /dev/gpiomem

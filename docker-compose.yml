@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+    # To be extended with either arm (raspberrypi) or amd (x64 PC) from docker/docker-compose.???.yml
+    php-fpm:
+        container_name: robot-php
+        working_dir: /api
+        volumes:
+            - .:/api
