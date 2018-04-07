@@ -32,4 +32,12 @@ foreach ($argv as $arg) {
 if (file_exists($envFile)) {
     $dotenv = new \Dotenv\Dotenv(dirname($envFile), basename($envFile));
     $dotenv->load();
+} else {
+    if (!getenv('PIN_MOTOR_LEFT_EN')) {
+        trigger_error(
+            'Environment variables seems to not be loaded. '
+            .'Be sure to provide .env file with --env=path/to/.env',
+            E_USER_WARNING
+        );
+    }
 }
