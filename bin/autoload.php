@@ -20,3 +20,16 @@ foreach ($autoloadLocations as $autoloadLocation) {
 if (!$found) {
     throw new Exception('Impossible to autoload dependencies. Are composer dependencies installed ?');
 }
+
+$envFile = __DIR__.'/../.env';
+
+foreach ($argv as $arg) {
+    if (preg_match('/^--env=(.*)$/', $arg, $matches)) {
+        $envFile = realpath($matches[1]);
+    }
+}
+
+if (file_exists($envFile)) {
+    $dotenv = new \Dotenv\Dotenv(dirname($envFile), basename($envFile));
+    $dotenv->load();
+}

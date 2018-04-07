@@ -5,9 +5,6 @@ namespace Drop\RobotApi;
 use Calcinai\PHPi\Factory as BoardFactory;
 use Calcinai\PHPi\Pin\PinFunction;
 
-$dotenv = new \Dotenv\Dotenv(__DIR__.'/..');
-$dotenv->load();
-
 class Api
 {
     public function __construct()
