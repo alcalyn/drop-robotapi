@@ -1,5 +1,5 @@
 {
-    "name": "alcalyn/drop-robotapi",
+    "name": "darkmira/drop-robotapi",
     "bin": [
         "bin/forward.php",
         "bin/backward.php",
