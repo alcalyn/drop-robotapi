@@ -1,5 +1,7 @@
 <?php
 
+namespace Drop\RobotApi;
+
 class Robot
 {
     /**

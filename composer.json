@@ -1,11 +1,18 @@
 {
+    "name": "alcalyn/drop-robotapi",
+    "bin": [
+        "bin/forward.php",
+        "bin/backward.php",
+        "bin/left.php",
+        "bin/right.php"
+    ],
     "require": {
         "calcinai/phpi": "^0.3.0",
         "vlucas/phpdotenv": "^2.4"
     },
     "autoload": {
         "psr-4": {
-            "": "src/"
+            "Drop\\RobotApi\\": "src/"
         }
     }
 }

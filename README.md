@@ -32,7 +32,9 @@ Just call the script you want among:
 Example:
 
 ``` bash
-php src/forward.php
+./bin/forward.php
+# or
+php bin/forward.php
 ```
 
 Or using docker:
@@ -40,7 +42,7 @@ Or using docker:
 ``` bash
 make bash
 
-php src/forward.php
+./bin/forward.php
 ```
 
 

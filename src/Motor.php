@@ -1,5 +1,7 @@
 <?php
 
+namespace Drop\RobotApi;
+
 use Calcinai\PHPi\Pin;
 
 class Motor
